@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第八章 &#8212; 满洲姑娘</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">满洲姑娘</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   简介
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_1.html">
+   第一章
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_2.html">
+   第二章
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/chapter_8.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter_8.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   4
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <style type="text/css">
+  .content{
+  font-size: 20pt;
+  text-indent: 54px;
+}
+</style>
+<div class="section" id="id1">
+<h1>第八章<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="content">　
+<p>又断粮了。这次断粮的不只七部落，整个开拓团都断粮了。</p>
+<p>发粮的日子过去了十几天，宁安那边的开拓科说，粮食早就装上火车发来了，可这边就是不见粮车的影儿。</p>
+<p>粮食丢了！一千多口人的粮食，不知丢在了哪条铁路线上。</p>
+<p>团长说，慢慢查吧，铁路是日本人管的，他们正在打仗，忙着呢，能倒出功夫给你们运送粮就不错了。回去等着吧。</p>
+<p>等粮的日子真难挨。平日每人每天一斤皮粮，连糠带菜也就勉强填肚子，哪里余富？家家月头月尾本都接不上。开始几天，还能从原住民那里换点儿粮食和土豆，但是开拓民多原住民少，没有几天方圆百里就啥也弄不出来了。苦春头上，榆树叶子还没展开，野菜刚冒芽就被剜没了。人们就想到了木耳和柳茶。木耳家家有，黑河盛产这玩意儿，男人每次进山都能带回些，存在家里卖给山外的老客。木耳这东西是富贵菜，没油没肉的蘸点儿盐水当饭吃，一两顿还行，多了就难以下咽了，而且光吃木耳还不消化，吃木耳拉木耳，好些人就闹肚子。柳茶是日本货，团里发的，在金家堡时没见过。发柳茶是下了账的，而且必须领。开拓民吃糠咽菜肚子一点油水都没有，那有兴致喝啥茶，家家的柳茶就都存下了。柳茶很苦，吃多了还拉不出屎来，但多洗多泡多煮几次，还是可以填肚子。尽管这样，柳茶木耳也吃完了。再也找不出能吃的了，男人们只好扔下土地，偷偷跑出部落找活儿干。</p>
+<p>部落西北沟里有个炭窑，是满洲炭矿株式会社的。窑主见到处都是找活干的开拓民，就将原有的烧炭工都解雇了，用一人一天半斤高粱米一顿午饭的价钱，全部雇用了开拓民。驴子福子都去了。</p>
+<p>女人们都去原住民的地里捡东西。粮食地里啥都没有了，田鼠洞都翻了好几遍。菜地里，去年秋天的白菜帮萝卜叶也都捡净了。今天遛了大半天，彩珠的篮子只有几个干瘪的萝卜和一把风干的白菜。</p>
+<p>小银子的篮子几乎是空的，她无精打采地走着，常常站下来望天。</p>
+<p>彩珠在地头的杂草里发现了一簇萝卜缨，就蹲下来用刀挖。小银子跟过来坐下瞅着她。</p>
+<p>“彩珠，你说咱上辈子作孽了么？”</p>
+<p>彩珠没作声。</p>
+<p>“一车皮的粮食，说丢就丢了？真拿咱不当人！”</p>
+<p>彩珠仍没作声。这一阵子，小银子净说没用的话。</p>
+<p>“狗东西，走了这些日子，咋还没动静。”小银子终于把她的心事说了出来。断粮不久，苏家泽就走了。说是回去找粮食，可快一个月了，粮食没影儿人也没影儿，小银子就整天魂不守舍。</p>
+<p>对苏家泽，彩珠从没像小银子那样相信过。现在看来，这人不算坏，但性情太浮。他常来部落找小银子，彩珠并不相信他真的喜欢她。要是他还像以前那样新鲜过后就拉倒了，那受伤的可是小银子。但这话小银子不愿听，她说，新鲜？一个人心里要是没东西，能新鲜这么长时间？彩珠想想也有理，就希望小银子是对的。</p>
+<p>萝卜缨下真有一个大萝卜，埋在土里很深，挖出来还有水分呢。</p>
+<p>小银子看见萝卜来了精神，拿过来就切。萝卜虽然冻了又化，但嚼在嘴里还是甜丝丝的。</p>
+<p>“彩珠姐。”大丫提着篮子过来了，眼睛瞅着萝卜。</p>
+<p>彩珠切了一块给大丫。大丫接过萝卜几口就吞了。彩珠瞅瞅大丫，把剩下的萝卜全都放到了她手里。大丫眼圈就红了，低头像只小耗子一样咔嚓咔嚓啃萝卜。</p>
+<p>“妈的，过的什么日子！”小银子扭过了头去。</p>
+<p>大丫家人口多劳力少，他爹刘发平时虽能占点小便宜，可这回断粮都得靠力气找饭吃了，他又瘦又小身子单薄，跑一天也找不回几口吃的。弄点米又都给了儿子，几个丫头就眼巴巴地挨饿。福子娘有时送过去一碗两碗粥，又能管啥用。因而刘发家的孩子只要见到一点能入口的东西，就不管不顾地往嘴里填。</p>
+<p>天色不早了，地里的东西也看不清了，彩珠起身说，回家吧。她们就喊还在那边捡地的香杏。香杏过来了。她篮子里的东西最多，还有好几个冻土豆。香杏兴奋地说，她刚发现了一小块土豆地，明天早点来，一定能捡回不少小土豆。</p>
+<p>回去的路上，暮色垂了下来，一块块过完火还未开垦完的土地静静地躺在山野里。几个姑娘挤在一堆走着，大丫瞅着野外，胆怯地扯了扯彩珠的衣袖，说那边地里有人。</p>
+<p>有人？这时候谁还在开地？姑娘们就站住了脚步瞅。</p>
+<p>“彩珠，那不是你爹呀？”</p>
+<p>不用别人说，彩珠已经认出了地里的人影。</p>
+<p>断粮后，没人再开荒了，但赵德亮还是天天下地，满眼望去，地里就剩他一人。这些日子，他咳得厉害，夜里常常咳成一团。但是家人劝不住，他说节气不等人，整出点儿地兴许能种上。</p>
+<p>此时，山影四合，暮色中那点晃动身影，看去更觉孤独。</p>
+<p>“爹，”彩珠走过去，站在身后轻轻唤了一声，“咱回家吧。”</p>
+<p>赵德亮缓缓转过身，看见了彩珠脸上的泪，他凝视着那泪水，颤颤地伸出手去，用粗糙的手掌在彩珠脸的上擦……</p>
+<p>彩珠走在付家营子的村路上。东张西望地看着人家的房子。彩珠是想找个人家给病中的爹爹换点儿吃的。</p>
+<p>昨天彩珠扶着爹爹回到家，人就有些软。夜里又咳得厉害了，人直打哆嗦。对面炕的刘发看着紧闭着眼睛的赵德亮就说：“这样怕不行，还是找大蚂蚱子来看看吧。”</p>
+<p>大蚂蚱子虽没学过医术，但也还会扎几针，下几付草药。在金家堡时，屯子里有人懂中医，没人找他看病，来这儿后，谁家有人头疼脑热只能找他了。大蚂蚱子拿根长针在赵德亮身上扎了一通，就让福子跟他回去拿草药，喝下了药，天亮时人总算好些了。熬了碗菜粥，赵德亮吃不下，福子娘急得满地转。彩珠就去炕柜里翻出了家里仅存的两盒火柴。火柴在统制品里也是稀罕物，名义上月月配给，可不知啥年月才能到手一盒，用它换东西，比钱还好使。</p>
+<p>“行吗？”福子娘焦虑地说，“人家见了咱都不开门呢。”</p>
+<p>“行。”彩珠将火柴揣进怀里，“总得给爹换口细粮才行。”</p>
+<p>彩珠嘴上说了，心里却没底。要是老匡爷在就好了。但老匡爷的小木屋外支着一根顶门棍。猎人的习惯这就是告诉人们，主人不在家，出远门了。老匡爷不在，彩珠不认识别人，她想找一户殷实点儿的人家，就一家家地看房子。</p>
+<p>金家堡的房子大都是用石头垒起来的，付家营子垒房子却是用木头。人们管这种木头房子叫“木刻楞”，用去了树皮的原木一根咬一根地垒起来，垒到房顶都不用一颗钉子。彩珠很喜欢这些“木刻楞”，觉得要是住在这样的房子里，肯定做梦都会闻到大树的气息。</p>
+<p>正是麦播时节，村里很静。路上也难见人影。彩珠拿不准进哪一家，犹豫一会儿，在一家大院门口站下了。来过两次付家营子，彩珠知道这家很有钱，主人住在黑河街，平日只有看门守院的人。彩珠就推了推院门。大门吱呀呀地开了一条缝，还没探进头，一条黑狗突然叫着蹿出来。彩珠一惊，脚下就绊倒在了。黑狗叫着又扑过来，幸好这时有人跑出来喝住了狗。</p>
+<p>来人是个头发花白的大娘，见地上倒个姑娘，连忙往起拉。</p>
+<p>“这闺女，哪儿的人呀？怎么走这儿来啦？”</p>
+<p>彩珠惊恐地瞅着那只狗：“山那边的开拓民，想—–想……”</p>
+<p>“别怕。”大娘扶起彩珠，“这狗瞅着凶，不咬人的。”</p>
+<p>彩珠站了起来，腿还是抖。大娘看了看彩珠的腿吃惊地说：“呀！裤子磕破了，腿也出血了！快进屋去，大娘给你包包。”</p>
+<p>彩珠不愿麻烦大娘。</p>
+<p>“走吧，屋里没人，都下地去了。你这腿不包包，咋走路哇。”</p>
+<p>大娘住的是下人的偏屋，收拾得挺干净。大娘让彩珠坐在炕上，察看她的伤口。膝盖磕破了很大一块皮，殷红的血珠混着泥土在伤口上滚。大娘咝咝地吸着凉气给彩珠洗伤口，然后找来烟叶细细揉碎撒在上面，用一块干净的布包好了。包完伤口，大娘拿起针线又给彩珠缝裤子。彩珠忙说自己来。大娘推开了她的手，笑着说：“‘穿着缝，不受穷’，大娘给你缝好了，往后你的日子就好过啦！”</p>
+<p>彩珠笑了，任大娘给她缝。大娘叹息一声问她，八成也是来找吃的吧。彩珠点点头，说爹病了，想给爹换点儿好下咽的细粮。她从怀里掏出火柴给大娘看，问这东西在屯里能换点儿白面不。</p>
+<p>大娘瞅瞅彩珠，说屯里人日子也挺难。这地方虽然出小麦，但出荷粮一年比一年紧，找点细粮也不易呢。</p>
+<p>彩珠明白了，揣好火柴谢过大娘就要走。</p>
+<p>“闺女，不忙走。”大娘把彩珠按在炕上，转身出去了。</p>
+<p>彩珠坐不住，她不能白跑，趁天不晚她还想找找看看。站起来往外走，腿还有些疼，忍着走了几步也没啥，就出了大娘的小屋。</p>
+<p>院里很宽敞。正房连着两排厢房坐落得很整齐。彩珠刚从后边转过来，大娘抱着一包东西迎面走来了。</p>
+<p>“你这闺女，咋这么性急。给。”大娘责怪地说着，把抱着的东西塞到了彩珠手里。彩珠见是一包白面，愣住了。</p>
+<p>“拿着吧。唉，你们那日子，真是难了！”</p>
+<p>彩珠慌忙谢着大娘，又掏出了火柴。大娘挡住了她的手：“你留着应急吧。闺女，再等会儿。”</p>
+<p>大娘又转回来时，手里拿着几个鸡蛋。</p>
+<p>“多了也没有，拿回去给你爹补补。愿老天保佑他早点好。”</p>
+<p>彩珠望着大娘，只觉一股热流从心底涌上了眼角。</p>
+<p>“瞅瞅，”大娘笑了，“挺刚强个闺女，眼窝儿咋恁浅。快擦了，风吹皴了脸，可就不俊气啦！”</p>
+<p>彩珠什么也没说，深深地鞠了一躬。转身离开时，还是悄悄地把火柴放在了窗台上。尽管她知道，大娘的情谊是多少火柴也换不来的。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                      2
+</pre></div>
+</div>
+<p>丢失的粮食找到了，还在铁道线上转悠呢。一车皮的粮食竟然丢在了东安省的虎头镇。</p>
+<p>从牡丹江发往黑河的车皮竟然去了东安省，整个一个南辕北辙。更气人的是，车皮从虎头车站返运时又过了头，越过西岗子甩到黑河街去了。黑河街比起虎头镇可以说是家门口了，可要把粮食弄进家，也还得铁路倒出工夫才行。开拓民瞅着铁路线上的粮食，像瞅着水里的月亮，晃悠悠的就是够不着。</p>
+<p>赵德亮喝了几天鸡蛋面汤，精神好了些。昨天白面没有了，福子娘就熬了点菜粥，赵德亮吃下去肚子就坏了，折腾了几回人又没了力气。彩珠就着急，要是再能弄点好东西，爹的病也许就将养好了。见河滩上有野鸭子飞起飞落，她就拉上小银子去找野鸭蛋，找了半天连根鸭毛也没有。“算了吧，”小银子泄气地说，“有咱这帮开拓民，哪儿还不像闹了蝗灾。”</p>
+<p>彩珠望着空荡的草滩发愁。</p>
+<p>“咱去老匡爷小屋吧，”小银子说，“就是他不在，屋里还兴许有点儿小米呢，拿回来给你爹熬点儿粥也好哇。”</p>
+<p>彩珠听了活心了。两人商量一下，早起快点儿走，不用半天就能到，天黑也就赶回来了。于是第二天天刚亮，两个姑娘就上了路。</p>
+<p>草地返青，树木发芽，旱柳已经绿透了。攀爬的蔓藤还都枯干着，草木疏朗，林子里面很明亮。记忆里的小屋并不遥远，红红的篝火、溢香的肉粥、铺满了塘草的板铺，磁铁一样吸引着两个姑娘走进了神秘的大森林。两个姑娘凭着记忆走得很顺利，很快就来到了背粮回来歇过脚的山坡上，当时在这坡上还有个姑娘滚了下去。如今那姑娘已经不在部落了，两天前，一个比他爹还大的人，用两麻袋包米把她换走了。她走时，部落里没人去看她，眼睛都落在了那两麻袋包米上。</p>
+<p>下到坡底，沿着山脚她们走进了一片林子。就在这片林子里，她们听见了公鹿打架的声音。此时林子清幽祥和，上午的阳光洒进来，林子深处的树木也看得很清楚。没有风声树响，四周都是喧闹的鸟鸣，叽叽喳喳的把她们脚下的枯叶声都淹没了。</p>
+<p>“咦！”彩珠拉了一下小银子，悄悄指着一棵大松树。</p>
+<p>一只灰褐色的小松鼠，蓬松着尾巴蹲在树杈上，两只前爪抱着一个大松塔，黑亮的眼睛盯着她们看。</p>
+<p>“哇！”小银子突然大叫一声。</p>
+<p>“啪！”小松鼠吓得扔下松塔，躬身一蹿，逃得无影无踪了。</p>
+<p>小银子跑过去，捡起松塔直劲乐。</p>
+<p>“你可真行呀，抢小松鼠的东西。”彩珠笑说。</p>
+<p>小银子抠着松子说：“这叫啥抢。松塔长得那么高，咱们也够不着，小松鼠多摘一个也不费啥事，就算是它帮咱了。”</p>
+<p>“你呀，歪说歪有理。”</p>
+<p>“那你吃不吃吧。”小银子递过来一把松子。</p>
+<p>彩珠接过松子也乐了。</p>
+<p>两人边吃边走边张望。那边又有小松鼠的影子，她们就追了过去。这边落地的松塔很多，但大多是空的，挑挑拣拣不知不觉来到了一片松林里。这片林子的松树很高大，仰头望去才能望到黑黝黝的树冠。风从上边刮过时，有海涛一样的声音隆隆地响。</p>
+<p>两人有些害怕了，赶紧离开这片林子。可这时她们才发现，找不到来路了，四周的树木一般粗细一般高大，瞅哪儿哪儿一样。望望头顶的天空，好在太阳还在，她们就比着太阳寻找方向。走着看着，路上的景物好像很熟悉又都很陌生，当她们发现来到了一个从没来过的山坡时，小银子一屁股坐下了。</p>
+<p>彩珠看看周围，不知该往哪儿迈步，也靠着小银子坐下了。</p>
+<p>“咱们迷山了，八成走不出去了吧。”小银子的声音有点儿抖。</p>
+<p>“不会的。咱离家不远，歇歇好好想想，会走出去的。”</p>
+<p>“可人说，迷山的人转来转去，有时就死在家门口了。”</p>
+<p>“别瞎说，咱不会的。”</p>
+<p>“都怪我，”小银子带了哭腔说，“我要不抢小松鼠的松塔，就不会有这事了。是天报应吧？”</p>
+<p>“瞎说！老天要为这事报应咱，也太小心眼儿了。要是小松鼠知道咱挨饿，也会给咱那个松塔的。咋是报应呢。”</p>
+<p>彩珠安慰着小银子，小银子不出声了，靠着彩珠流眼泪。</p>
+<p>彩珠其实也挺怕，但她得挺着，两人要是都垮了，她们真就完蛋了。她疲惫地倚在树上，想着小时娘给她讲的迷山的小姑娘。小姑娘挺幸运，她有一条引她回家的弦子沟。这儿要是也有条弦子沟就好了。彩珠就闭上眼睛想弦子沟的流水，想那天躺在娘坟上听弦子沟叮咚的流水声。山风习习，春草细语。风动草语中真的有了轻轻的流水声。</p>
+<p>彩珠倏地睁开眼睛，凝神细听，什么地方果然在汩汩流水。</p>
+<p>“小银子！”她连忙推着小银子，“你听，是不是有流水的声音？”</p>
+<p>小银子听了一会儿，说像是有水声。</p>
+<p>彩珠一下子跳了起来。“快，快找找！”有时人在林子里走，不知不觉地就上了坡，若是顺着流水走，不就下到沟谷了么。</p>
+<p>小银子也蹦了起来，两个人顺着声音找。</p>
+<p>果然，一条不大的山水在林中细细地流。</p>
+<p>她们跟着流水钻来钻去地来到了一片桦树林。这片林子疏疏朗朗的，中间还有一小块空地，空地上扎着一个小窝棚，一缕青烟从窝棚顶上袅袅地冒出来。林子里还有一匹矮小的马，不拴也不绊，悠闲地啃着地上的草皮。窝棚旁边还有一条狗，那狗懒懒地站起来向这边望望，转身拱进窝棚里去了。</p>
+<p>两个姑娘躲在树丛后面张望。小银子说，八成遇上棲林人了吧？彩珠点点头，心想真要遇上他们就好了。</p>
+<p>正看着，窝棚里出来个男人。个子不高，穿件皮袍子，手里拿杆长枪。狗也出来了，向这边望着。男人就冲这边喊了句什么。</p>
+<p>两人仍然伏着没出声。</p>
+<p>男人就低头对狗说了句什么，这时，那条一直懒洋洋的狗，突然精神一抖，箭一样向这边冲来。</p>
+<p>小银子“妈呀”一声站起就跑，彩珠一把扯住了，拉着她从树丛后站了出来。狗到跟前没有往上扑，圈着她们往主人那边赶。</p>
+<p>男人见走来的是两个姑娘，回头对窝棚里喊了声，窝棚里就出来个女人，身后还跟个小姑娘。</p>
+<p>看到有女人和孩子，彩珠和小银子安心了，大胆地走了过去。</p>
+<p>到了近前，男人打量着她们，问她们是什么人，躲在树后干什么。男人的汉话说得很清楚，只是有点硬，彩珠就说她们是哭女河边的开拓民，找不到家了。男人瞅瞅她们，跟女人说了句什么，女人就转身把她们让进了窝棚。</p>
+<p>看来，这就是老匡爷讲的棲林人的撮罗子了。撮罗子里铺着兽皮，中间拢着篝火，火上挂只烟熏火燎的吊锅，她们在外边看到的那缕烟，就是从这吊锅上边的洞口冒出去的。</p>
+<p>女人让她们坐在火边。火上的吊锅里正煮着东西，咕嘟咕嘟地翻滚着。小银子抽着鼻子使劲闻，猜不出锅里煮的是什么。女人笑笑，从身后的杂物堆里取出两只木碗，拿把木勺在锅里搅了搅，盛出两碗黑乎乎的东西端给了她们。东西很烫，两人用小木勺慢慢搅。碗里有些像是黄米粒，有些像是小肉块，那些破碎的黑色小圆粒就认不出是什么了。小银子舀了一勺放进嘴里，咂咂嘴对彩珠说：“有点像老匡爷做的肉粥！可老匡爷的粥里没有这些黑乎乎的玩意儿，这是啥呀？”</p>
+<p>彩珠就看女人，女人笑着转过头去看男人。男人坐在一旁抽烟，说那是稠李子，粮食不够用它掺着煮粥吃。然后又问小银子，她说的老匡爷是什么人？</p>
+<p>“老匡爷就是老洞狗子呀，”小银子说，“他长年在山里跑，有好些棲林朋友，还有个叫库留欠的，你们认识这人吗？”</p>
+<p>男人听了，拿下咬在嘴里的烟袋笑了，爽快地说他就是库留欠。</p>
+<p>“你就是库留欠？”小银子惊讶地望着他，又扭过头望着身边的女人叫道，“你的眼睛好了呀！”</p>
+<p>彩珠也看女人的眼睛。女人搂着小女儿，两只眼睛笑得弯弯的，很清澈。库留欠说他女人的眼睛全亏了老匡爷的草药。老匡爷是他的朋友，她们是老匡爷的朋友也是他的朋友。朋友来了没有酒，肉粥就多多吃点吧。库留欠又问她们咋会迷了山。她们就把部落断粮和找老匡爷的事说了。库留欠听完没吭声，起身出去了。</p>
+<p>彩珠见天不早了，就问女人回哭女河的路怎么走。女人汉话说不好，让她们等等库留欠，说他一会就回来。</p>
+<p>她们只好坐着等。这时，小姑娘从妈妈怀里跳出来，骨碌着黑眼睛对妈妈说什么。她们听不懂。女人就笑。说小姑娘想给她们跳支舞。</p>
+<p>“好啊！好啊！”小银子拍起手。</p>
+<p>小姑娘就围着火塘旋转着舞起来，边跳边唱：</p>
+<p>“嗨呀嗨呀嗨依呀，嗨呀嗨呀嗨依呀——”</p>
+<p>稚嫩清脆的歌声在阴暗狭小的撮罗子里荡着，荡起了一片欢声笑语。欢笑声中，库留欠回来了，手里提只野鸡，还拿着一把干肉条。</p>
+<p>库留欠说，他遛套子去了，只套住了一只野鸡。他把野鸡和肉条都递到彩珠手里，说给她爹爹吃，有神的保佑，她爹爹会好起来。</p>
+<p>彩珠慌了，库留欠家的日子也很难，她不能要这些东西。</p>
+<p>库留欠生气了，瞪圆了眼睛。彩珠不敢再吭声，乖乖拿上了东西。</p>
+<p>女人牵着小姑娘把她们送出了撮罗子，望望天说：“太阳走了。”</p>
+<p>库留欠送她们出林子，一直送到她们认出了熟悉的景物才分手。临别时，彩珠问库留欠，要找他时怎么找？</p>
+<p>库留欠笑了，说是朋友总会见面的。说完头也不回地走了。</p>
+<p>彩珠望着他离去，直到那披着毛皮的背影融入了林木中。</p>
+</div>
+<div class="section" id="id3">
+<h2>3<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="content">　
+<p>赵德亮死了，死在了他没有开垦完的土地上。</p>
+<p>那是个风和日丽的正午，太阳暖暖地照着，草木茸茸。当彩珠和福子娘找到他时，还以为他坐那儿望景呢。</p>
+<p>那天早晨，赵德亮精神很好，喝了一碗煨在锅里的肉汤，还吃了点儿高粱米粥。见阳光透过桦皮上的玻璃镜亮亮地照进来，就说想去外边晒晒太阳。彩珠帮福子娘扶他到屋外窗下坐好，又回屋拿件夹衣给他严严裹上了。赵德亮就温情地瞅着彩珠，对福子娘说，咱有个闺女真是福气呀！福子娘也说，敢情！彩珠心里就暖暖的，对爹娘笑笑，提起窗下的篮子，说她挖野菜去了。赵德亮就说，把马也牵出去遛遛吧。自己这些日子照看不了马，福子在炭窑也顾不上它，地早早晚晚还得种，马伺弄不好可不行呀。彩珠应了一声去牵马。福子娘说你净瞎操心，马有彩珠伺弄，好着呢。赵德亮望着彩珠牵马离去的背影对福子娘说，有这闺女在她身边，他撒手走了也能闭上眼睛了。福子娘就怪他，说好好的人，净说不吉利的。</p>
+<p>傍晌，彩珠回了家。进屋不见爹娘。对面炕的刘发媳妇说，她娘去河边洗衣服了，她爹说屋里闷，出去走走。爹的身子虚，不该出去的，彩珠急忙出去找。</p>
+<p>刚出门，福子娘抱着洗衣盆回来了。听说赵德亮不在家，也扔下盆子出门找。找了几家不见人，彩珠就说，去了地里吧？娘俩就往地里奔。果然，远远就望见了赵德亮的背影，在他家那片刚开垦的土地上，孤零零地坐着。彩珠和福子娘连跑连喊，当她们跑到近前时，赵德亮已经听不见她们的呼唤了。</p>
+<p>披着正午的阳光，赵德亮像尊神像，端坐在荒凉的土地上。</p>
+<p>福子娘抱着赵德亮放了悲声，使劲地摇晃。赵德亮软着身子倒下了，两手紧紧抓着他的烟口袋。</p>
+<p>彩珠把他胳膊顺下来，去拿他手里的烟口袋，拽了一下没拽动。赵德亮病在炕上的日子，一直都把烟口袋放在枕边。他的烟口袋里早已没了烟。部落里，也早就一根烟丝都没了，烟瘾大的人就抽树叶子。赵德亮咳嗽什么也抽不了，时常就摩挲烟口袋。彩珠小心地掰开了赵德亮的手指，烟口袋落到了彩珠手里，沉甸甸的。彩珠打开了口袋，见是一把黝黑的土！瞅着黑土，彩珠明白了，赵德亮爹爹一直揣在怀里的竟是一把家乡的土呵！彩珠的泪簌簌地砸在了黑土上，她小心地把烟口袋系好，揣进了怀里。</p>
+<p>赵德亮为自己选下了最后的安身地，家人就在他倒下的地方，将他葬在了那里。没钱买棺木，福子娘把陪嫁的炕柜毁了。</p>
+<p>福子和驴子拆卸炕柜时，彩珠拎着篮子上山了。</p>
+<p>无力置办纸钱，让爹冷冷清清的空着手上路，彩珠心里很难受。她就想到了深秋时节满天的落叶。深一脚浅一脚，泪眼婆娑地走在山路上。彩珠好像又回到了那年秋天。娘死了，舅舅也死了，债主带着人贩子来拉她，是赵德亮爹爹从人贩子手里把她抢了出来，她才又有了一个温暖的家。</p>
+<p>高大的柞树下，去年的落叶层层叠叠，像金黄的纸片，沙沙响。挑选大片的叶子拣满了篮子，彩珠靠着一棵大树下坐来，拿出剪子将树叶一片一片剪成了圆圆的冥钱，她想，爹最恋的是土地，从土地上长出来的东西，爹一定会喜欢。树叶冥钱会像树叶一样生生不息，年年将秋的消息送到爹那里，爹就会高兴地知道，这边世上又一个秋收到了。但愿爹爹去的那里没有战争也没有日本人，让爹能安安稳稳地拥有一片自己的土地。</p>
+<p>部落能走动的人都来给赵德亮送行。送葬的队伍缓慢地走在山路上，没有唢呐的吹奏，女人的哭声在旷野上显得那么无助凄凉。</p>
+<p>彩珠慢慢地撒着树叶冥钱，撒出的东西漫天飘舞着，像树叶又像冥钱。彩珠好像一会儿走在哭女河的山坡上，一会儿又走在金家堡的田野里……她在这两个时空里恍惚游走着，觉得苦难的路程是那么的遥远又漫长。</p>
+</div>
+<div class="section" id="id4">
+<h2>4<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="content">　
+<p>送走赵德亮的第二天，部落又响起了哭丧声。</p>
+<p>这次死的是个年轻的媳妇。这媳妇平时身子壮得像条牛，她是生生饿死的。死时媳妇还带着身孕，习俗上，双身子的人是不能入土的。殡葬的那天晚上，家人用桦树皮把尸首包裹好，然后放到柈子堆上烧。当大火熊熊燃起时，连汉子们也都掩面失声了。</p>
+<p>随后，死神像是缠住了七部落，几天时间又死去了好几人。</p>
+<p>赵德亮下葬后，福子娘不吃不喝躺了两天。第三天她睁开了眼睛。彩珠瞅着她心里有些慌。“孩子，别怕，娘没事儿。”福子娘坐了起来，倚在墙上瞅彩珠，“娘躺两天想了两天。这人哪，来在世上啥苦都得吃，啥罪都得受。世上没有过不去的河。你爹走了是享福去了，咱娘几个活着，日子无论咋难还得往下过。”</p>
+<p>彩珠一下扑到福子娘怀里。这两天，她吓坏了，一眼不眨地守着福子娘，这会儿心一松，眼泪扑簌簌地滚下来。</p>
+<p>福子娘为彩珠擦着泪，让彩珠放心，说往后啥坎儿她都能迈过去了。彩珠就笑了，起身说锅里熬着粥呢，她去给娘盛来。这时，对面炕上刘发媳妇搂着小儿子嘤嘤地哭了。彩珠不知该说啥，转身出去了。昨天头午，刘发拿大丫换了一麻袋包米。大丫哭喊着被人拉走时，彩珠把脸埋进了娘的被子里。晚上，刘发又拉着二丫三丫出门了。两个小丫头还不明白事儿呢，跟着爹爹串门似的走了。彩珠不知道该不该怪刘发心狠，看着三个丫头像三只小羊羔一样被人拉走了，她就想，当年的自己真的很幸运。</p>
+<p>彩珠端着粥碗回屋时，福子娘正在慢声细语地劝刘发媳妇。见彩珠端粥过来，福子娘就让给刘发媳妇送过去，劝她吃点东西千万要挺住，说只要她活着，闺女们不管走到哪儿，也还有个妈。刘发媳妇哇地一下放声了。福子娘说，哭吧，哭个痛快就好了。</p>
+<p>彩珠把粥碗给刘发媳妇放在炕沿上，又去给娘盛了一碗。粥碗刚递到娘手上，小银子就气急败坏地跑来了。</p>
+<p>“彩珠！快去看看吧！香杏她爹把她给卖啦！”</p>
+<p>“啥？”彩珠吃惊地看着小银子。</p>
+<p>“啥啥呀？香杏卖给山里淘金的老跑腿子啦！”</p>
+<p>“不会吧？香杏有了婆家呀？”</p>
+<p>“啥不会呀！大车都赶到家门口了，眼瞅着人就给拉走啦！”</p>
+<p>彩珠急了，筷子递给娘，拉着小银子就跑。</p>
+<p>香杏家门前，果真停着一挂披红挂彩的大马车，插在辕子上的大鞭子挑根红缨穗，在风中颤颤地抖。</p>
+<p>彩珠心里咯噔一下，拨开门口的人群冲进香杏家。</p>
+<p>香杏家和老柳头家住对面炕，两家地中间站了好陌生些人，闹闹嚷嚷的。香杏夹在两个女人中间，坐在炕上沿抹眼泪。彩珠过去拉起香杏，小银子也扯着香杏往外拽。</p>
+<p>“干啥干啥？”一个女人拦住了香杏，不让她走。</p>
+<p>彩珠打开了那女人的手，瞪圆了眼睛。</p>
+<p>那女人愣了一下，嚷道：“嗨！这俩丫头是啥人？跑这儿拉扯新娘子，还想抢人不成！”</p>
+<p>“谁抢谁啦？人家这是下过聘礼的姑娘，你们来拉人？”</p>
+<p>小银子也嚷道：“趁开拓民有难跑来捡便宜，良心让狗吃啦！”</p>
+<p>“嗨，嗨，这俩丫头，咋说话呢？”</p>
+<p>这时，老柳头从人后挤了过来，陪着笑脸说：“大伙都别急，好好说话。也难怪，这几个丫头是打小一块玩儿大的，冷丁走了一个心里不好受，想说话就让她们说两句吧。”</p>
+<p>小银子拽着香杏挤出屋，彩珠随在后边也出来了。</p>
+<p>出了院子，小银子就开骂：“你个面糊杏，随便让人捏！你订了婚的男人呢？不要啦？你们俩那么好，说让人卖就卖了？”</p>
+<p>香杏只是嘤嘤哭，一句话也没有。小银子急得就差打香杏了。</p>
+<p>“别瞎叫！听听香杏说，到底咋回事？”彩珠安慰地搂着香杏。香杏抽泣着把头埋在了彩珠肩上，说扁头病了。</p>
+<p>“扁头病了就卖你？他是人你不是人？”小银子又嚷。</p>
+<p>“我爹也是没法呀！”</p>
+<p>“你爹没法？你病了你爹能不能卖扁头？”</p>
+<p>“小银子！你让香杏慢慢说。”</p>
+<p>香杏哽咽地说，扁头病了好些天了，迷迷糊糊的不睁眼。大蚂蚱子说他这病挺厉害，得送城里的医院才行。眼瞅着部落不断地扔人，香杏爹急了，就去了宏胡图那边的九部落，看她未婚夫家能不能寻点钱。谁想他家的日子比她家还难，他的小弟躺在炕上快要饿死了。看有人赶着大车来部落换姑娘。两个爹爹就都想到了香杏。黑河这地方男多女少，特别是那些烧炭淘金伐木头的山里人，好些人一辈子也找不着老婆。这些人手里还都有几个钱，讨老婆要比庄户人家给的多。于是，香杏的未婚夫家得到了一麻袋包米，香杏爹得到了送扁头去城里看病的许诺。</p>
+<p>小银子听说是两家商量着把香杏给卖了，气得直嚷：“他呢？那混帐小子就答应啦？”</p>
+<p>“他在外边干活呢，不知道这事。”香杏的眼泪噼里啪啦往下掉。</p>
+<p>“那不行，他不知道你不能走！”</p>
+<p>“他知道又能咋？”香杏哽咽着，“他小弟和我小弟都要死了，我俩也不能眼瞅着他们死呀。”</p>
+<p>这时，那边喊香杏，说大车要走了。</p>
+<p>她们看见香杏爹已把扁头抱了出来，正往大车上放。香杏擦净了脸上的泪，对两个朋友悲戚地一笑，头一低，转身走了。</p>
+<p>“香……”小银子追出一步喊了半声就呆在了那里。</p>
+<p>彩珠看着香杏走向大车，看着香杏坐到车上，看着赶车人的鞭子扬了起来，大车骨碌碌地上路了。</p>
+<p>小银子呜呜地哭起来。</p>
+<p>车上的香杏没抬头，随着大车渐渐远去，她的身影模糊了。</p>
+<p>两人站了好久，望着空荡荡的山路。</p>
+<p>往回走时，小银子哑着嗓子告诉彩珠，听说粮食找回来了，已经到了西岗子。彩珠什么也不想说。粮食到了，香杏走了，好些人也永远地离开了。</p>
+<p>河边的草滩在变绿，河那边的山岚也在返青，展眼望去像是一片浮动的绿雾。绿雾中，哭女河呜呜咽咽地在流淌。彩珠心里一紧，她听到了，她终于听到了哭女河的哭声，就像刚才香杏的哭泣。</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 鲁晓聪<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
