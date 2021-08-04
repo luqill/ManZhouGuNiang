@@ -6,3 +6,11 @@ root: intro
 chapters:
 - file: chapter_1
 - file: chapter_2
+- file: chapter_3
+- file: chapter_4
+- file: chapter_5
+- file: chapter_6
+- file: chapter_7
+- file: chapter_8
+- file: chapter_9
+- file: chapter_10
